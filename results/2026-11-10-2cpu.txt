@@ -1,0 +1,41 @@
+# vNet benchmark results, 3 passes
+# date:     2026-11-10T14:29:42Z
+# vNet:     commit 3074ec9, build type Release
+# cpu:      2 x Intel(R) Xeon(R) Processor @ 2.10GHz
+# memory:   8 GB
+# kernel:   6.18.44-fc-v338
+# openssl:  OpenSSL 3.0.13
+# iperf3:   iperf 3.16
+# pass 1
+RESULT throughput tls=on limits=off seconds=10 overlay_mbit=666 overlay_rtt_ms=0.500 baseline_mbit=16700 baseline_rtt_ms=0.021
+RESULT throughput tls=off limits=off seconds=10 overlay_mbit=1080 overlay_rtt_ms=0.315 baseline_mbit=15800 baseline_rtt_ms=0.017
+RESULT throughput tls=on limits=on seconds=10 overlay_mbit=212 overlay_rtt_ms=0.436 baseline_mbit=17000 baseline_rtt_ms=0.022
+RESULT join machines=100 registered=100 seconds=1.09 launch_seconds=.22 switch1=50 switch2=50 rejected=0
+RESULT join machines=200 registered=200 seconds=2.03 launch_seconds=.75 switch1=100 switch2=100 rejected=0
+RESULT join machines=400 registered=400 seconds=4.18 launch_seconds=1.60 switch1=200 switch2=200 rejected=0
+RESULT join machines=800 registered=800 seconds=8.54 launch_seconds=3.77 switch1=400 switch2=400 rejected=0
+RESULT config machines=300 lines=1504 bytes=23290 reload_to_confirmed_ms=15
+RESULT config machines=5000 lines=25004 bytes=390647 reload_to_confirmed_ms=62
+RESULT flood offered_mbit=300 limit_pps=5000 limit_mbit=50 pings_answered=15/15 rate_limited_packets=107658
+# pass 2
+RESULT throughput tls=on limits=off seconds=10 overlay_mbit=640 overlay_rtt_ms=0.428 baseline_mbit=17100 baseline_rtt_ms=0.016
+RESULT throughput tls=off limits=off seconds=10 overlay_mbit=1030 overlay_rtt_ms=0.310 baseline_mbit=16900 baseline_rtt_ms=0.017
+RESULT throughput tls=on limits=on seconds=10 overlay_mbit=212 overlay_rtt_ms=0.459 baseline_mbit=17100 baseline_rtt_ms=0.021
+RESULT join machines=100 registered=100 seconds=1.02 launch_seconds=.24 switch1=50 switch2=50 rejected=0
+RESULT join machines=200 registered=200 seconds=2.06 launch_seconds=.70 switch1=100 switch2=100 rejected=0
+RESULT join machines=400 registered=400 seconds=4.00 launch_seconds=1.73 switch1=200 switch2=200 rejected=0
+RESULT join machines=800 registered=800 seconds=8.32 launch_seconds=3.76 switch1=400 switch2=400 rejected=0
+RESULT config machines=300 lines=1504 bytes=23290 reload_to_confirmed_ms=15
+RESULT config machines=5000 lines=25004 bytes=390647 reload_to_confirmed_ms=74
+RESULT flood offered_mbit=300 limit_pps=5000 limit_mbit=50 pings_answered=15/15 rate_limited_packets=107653
+# pass 3
+RESULT throughput tls=on limits=off seconds=10 overlay_mbit=656 overlay_rtt_ms=0.420 baseline_mbit=16900 baseline_rtt_ms=0.017
+RESULT throughput tls=off limits=off seconds=10 overlay_mbit=1080 overlay_rtt_ms=0.282 baseline_mbit=16400 baseline_rtt_ms=0.017
+RESULT throughput tls=on limits=on seconds=10 overlay_mbit=212 overlay_rtt_ms=0.388 baseline_mbit=17700 baseline_rtt_ms=0.016
+RESULT join machines=100 registered=100 seconds=1.09 launch_seconds=.19 switch1=50 switch2=50 rejected=0
+RESULT join machines=200 registered=200 seconds=2.11 launch_seconds=.74 switch1=100 switch2=100 rejected=0
+RESULT join machines=400 registered=400 seconds=4.31 launch_seconds=1.85 switch1=200 switch2=200 rejected=0
+RESULT join machines=800 registered=800 seconds=8.63 launch_seconds=3.82 switch1=400 switch2=400 rejected=0
+RESULT config machines=300 lines=1504 bytes=23290 reload_to_confirmed_ms=15
+RESULT config machines=5000 lines=25004 bytes=390647 reload_to_confirmed_ms=67
+RESULT flood offered_mbit=300 limit_pps=5000 limit_mbit=50 pings_answered=15/15 rate_limited_packets=107653
